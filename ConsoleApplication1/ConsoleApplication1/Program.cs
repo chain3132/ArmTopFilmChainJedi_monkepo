@@ -124,7 +124,7 @@ namespace ConsoleApplication1
             Monster updateMonsterB = Monster.caculateStat(5, 1);
             Console.WriteLine($"Name: {updateMonsterB.NameMonster} \n Attack :{updateMonsterB.Attack}");
             
-            /*
+            
             string[] dialogueinto = new string[]
             {
                 "Welcome Stranger to Monkepo World.... \n",
@@ -169,7 +169,7 @@ namespace ConsoleApplication1
                               "3.monsterC\n");
             Console.WriteLine("===========================");
             int chosenmonster = int.Parse(Console.ReadLine());
-*/
+
 
 
 
