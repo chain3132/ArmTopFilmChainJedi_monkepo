@@ -205,6 +205,15 @@ namespace ConsoleApplication1
 
         }
 
+        public static int CaculateDamage(int level, int attack, int defense, int hpMonster)
+        {
+            int damage = 
+                Convert.ToInt32(
+                    2 * level / 5 * attack/defense / 50 + 2);
+            int hpEqual = hpMonster - damage;
+            return hpEqual;
+        }
+
         public static void Town1()
         {
             
@@ -302,7 +311,7 @@ namespace ConsoleApplication1
             };
 
             for (int i = 0; i < 3; i++)
-            {
+            { 
                 ShowText(dialogueinto2[i]);
                 Console.ReadKey(true);
 
@@ -320,7 +329,7 @@ namespace ConsoleApplication1
             {
                 case 1:
                 
-                    Player.playerMonster[0] =new Player(updateMonsterA.NameMonster, updateMonsterA.Hp, updateMonsterA.Attack,
+                    Player.playerMonster[0] = new Player(updateMonsterA.NameMonster, updateMonsterA.Hp, updateMonsterA.Attack,
                         updateMonsterA.Defense, updateMonsterA.Speed, updateMonsterA.SpAttack,
                         updateMonsterA.SpDefense);
                     break;
@@ -328,7 +337,7 @@ namespace ConsoleApplication1
                     
                 case 2:
                 
-                    Player.playerMonster[0] =new Player(updateMonsterB.NameMonster, updateMonsterB.Hp, updateMonsterB.Attack,
+                    Player.playerMonster[0] = new Player(updateMonsterB.NameMonster, updateMonsterB.Hp, updateMonsterB.Attack,
                     updateMonsterB.Defense, updateMonsterB.Speed, updateMonsterB.SpAttack,
                     updateMonsterB.SpDefense);
                     break;
