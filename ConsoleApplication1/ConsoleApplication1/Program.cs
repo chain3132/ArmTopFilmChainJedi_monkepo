@@ -24,11 +24,15 @@ namespace ConsoleApplication1
                                                      | $$                                                        
                                                      |__/                                                        
 ";
+            Console.ForegroundColor = ConsoleColor.DarkBlue;
             Console.WriteLine(
                 "===================================================================================================================");
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine(text);
+            Console.ForegroundColor = ConsoleColor.DarkBlue;
             Console.WriteLine(
                 "===================================================================================================================");
+            Console.ResetColor();
 
         }
 
@@ -36,61 +40,38 @@ namespace ConsoleApplication1
         {
             Console.Clear();
 
-            string monsterA = @"                                                                                       
-                                         @@                                            
-                                       @@@                                             
-                                      @%%@                                             
-                                     @%%%                                              
-                                    @%%%%                                              
-                                  @%%%%%@                                              
-                         @@      @%%%%%%    @%@       @@                               
-                         %%@    %%%@@@@@   @%%      @%%@                               
-                        @%%%@  @@%####%@  @%%@   @%%%%@                                
-                        %%%@@%############%#%% @@%%%%%@                                
-                    @@@ %@%*###%############%##%@@%%%@       @     @%%%                
-                    @@@%#####################%%####%@     @%%@  @%%%%@                 
-                     @%###########################%#%   %%%%%@%%%%%%@                  
-                   %##########%**##%#################@%%@@@@%%%%%%%                    
-                   ##%%###%##################%%###%##%%@@%%%%%%%%%                     
-                  @###################%@@%###########%#%%%%%%%%%@                      
-                   %%%#######%######%+*@@%%##%%#########%@%%%%%@                       
-                   %@**##%##%##%%%@#+*%%%%%*--+%%%########@@%%@                        
-                %@@##%@@%%%%###%%%%@@%######+=-+#########%%%@   @%%%@                  
-                @@@*%#############%%%#######%#@#%#######%%%##%@%%%%%@                  
-                @@+-#+++%#############%+*++##%###############%@%%%%@@                  
-               @%%%%%#%##**##########*=+-+#####%#####%%########%%%%%%%%%%%@%@@         
-              %#########%%*#=:=:=::=+#%+@####@%#%###%%#########%@%%%%%%%%%%%@          
-            @###%######%%%#@@%+-++=*##%%%##%%##%#%#%###%#######%@%%%%%%%%%@            
-            ##%###%%####%%%%##########%%#**+*%%#####@%#%#%%%###%@@%%%%@                
-            %%###%*++***#@@%#####%%###**%+*#*+***###########%#%@@%@                    
-            %####*++++*#*@##*+*###****+#%#*+++*###*#%######%#%%%                       
-           @####%++++++*#%*+***##+*####*#*++++*###*##########%%@%%@@                   
-          @#####%+++++++*+=*%%##%@@***++##++++*+++#######%%#####%@                     
-          @*###%@#+**++**#*#%%%###++++++#*++++++*##%######%%###%%%%%@                  
-          @###%%#*++++++#+*%%#####%%*****++++++*%##############@%%%%%%%%@              
-          @######%#+++++*%*==#%##################%%###**######%@%%%%%%%%%%@            
-          %#########*+*####**++**#%############%######+*###%%%%@@%%%%%%%%%%%%@         
-          ###########%%###*++#*++++++###############%*+*%#####%@@%%%%%%%%%%%%@         
-          %#########%%#####*++++++++++++##########%#*++*########@%%%%%%@@              
-           #########%#####+=*++++++++++++++++++++++++++*#####%##%@%@                   
-             @#####%%###*++*#++++++++++++++++++++++++++*######%##%@@@                  
-                %#*++*++++++++++++++++++++++++++++++++*##########%@@@                  
-                %##++++*+++++++++++++++++++++++++++++*##########%                      
-               @###*#+++++++++++++++++++++++++++**++*##########%                       
-               @####**#*+++++++++++++++++++++++++#***####%####%                        
-               @%######**###+++++++++++++++++*##@  %%#######%%                         
-                @%#########%@@@#*++++++**#%@     @%%%##%%@                             
-                  %##########%%@%              @%#####%@                    
-                     @@@%%@@%%###              %####%@                    
-                            @####@              %#####%                   
-                           @%####%              %#######%%@@                       
-                       @%%%#####%                %##%%#####++**#@                    
-                    @#++*######%@                 %####*##*+**+*%                    
-                                                   @@%%%####%%                         
-                                                                                       
-                                                                                       
-                                                                                       
-                                                                                       
+            string monsterA = @"
+
+
+               ^!??7!                            !??7!^               
+               5&!~5@7.                        .7@5~!&P               
+               ?P7!P&:                          :&P!7P?               
+                .!!!JG7   .::^7GGGGGGGP?^...   ?GJ!!!.                
+                     JBG?G&&BB##PYJJ5G####@GJ?5PY                     
+                    ^5##GPJ^:::.      .::^?5G&#B5^                    
+                  ~P@#5!      .7??!!??7.     :7P&@P~                  
+                !G@G7:        7@J~77~J@7       .~Y&@G~                
+            ^?7G@&J^         5@5 !@@! 5&Y         ~Y&@G7?^            
+         ~GG#@@&5^           :?#!^77^7#?:          .7B@@@#BB~         
+        J@@@@@@P~             .Y5PBBP5Y:             ?B@@@@@@J        
+        5@@@@@@#BB#J      ~PG?:   ..   :?GP~      J#B#&@@@@@@5        
+      .~G@@@@@@@@@@#J.    J@~75PYJJJJYP57!@J    .J#@@@@@@@@@@G~       
+      .B@@@@@@@@@@@@&:    7B7?P#J!~~~J#P?7B7    :&@@@@@@@@@@@@B.      
+      :&@@@@@@@@@@@@G.      ^:          .^      .G@@@@@@@@@@@@&:      
+      :#@@@@@@@@@@@5                             .5@@@@@@@@@@@#:      
+      :#@@@@@@@@@@@5             ~55~             5@@@@@@@@@@@#:      
+      :#@@@@@@@@@@B7           .P&BB&P.           7B@@@@@@@@@@#:      
+      :#@@@@@@@@@@~        .7JYP5!  !5PYJ7.        ~@@@@@@@@@@#:      
+      :#@@@@@@@@@&^        .P#P?.    .?P#P.        ~&@@@@@@@@@#:      
+      :#@@@@@@@@@&Y~         5@P5YJJJYG@5         ~5&@@@@@@@@@#:      
+     :J&@@@@@@@#GG@&5~.      ?BPBY::JBPB?      .~5&@GG#@@@@@@@&J:     
+     7@@@@@@@@@7  ~P@&P?!:                  :!JP#@P~  7@@@@@@@@@7     
+     ?@@@@@@@@?:    ^PGB@BP57^::::::::::~J5PB@#5!:    :?@@@@@@@@?     
+     ?@@@@@@G!      :@J.77YG&##BB####BB#&&PJ7!.J@:      !G@@@@@@?     
+     ?@@@@G~        .PGY~. .!##:.^!7^.:##!. .~YGP.        ~G@@@@?     
+     ^777~            ~J5PPPGY~        ~YGPPP5J~            ~777^     
+                         .::.            .::.                         
+                                                                      
                                                                                        ";
             Console.WriteLine(monsterA);
 
@@ -99,44 +80,38 @@ namespace ConsoleApplication1
         public static void ImgMonster2()
         {
             string monsterB = @"                                                                                    
-                                                                           
-                                 =#*******#+.          -++                             
-                               :#******#*****#.      .+==*                             
-                      :.      .#*********#*%@@@=#*-:-++==*.                            
-          .           *=      +**********%@@@%********##*+*-                           
-         =-        ::=%=#*%%+=**+*#****#%@@#*%@@@%##*****%**=         .::              
-        :*=     .=###*%+=#%@@*+*+******%@@@#*#-......+#***##*+      :+*.               
-        :==+%@***##=...+==+@+=====++***@@@@@%...-+==@@-*****#*+    :*+:                
-        -+===++**#::@@@#++==+*=====*+*##%****.%@@@@@@@%.##**##*    +=+                 
-         +===++*#*.%@@@:+===========*##****#%..-=+#@@%.-%****#*=  :+=+:     ++===+*.   
-          =+==+*##:-=:...++====+==+#********#*%-....:=#*%##**@@#.#@**+*   :*=+=*: :+   
-            .-*****=..:*##*#*+==+#*************#%#**%#**###%@@@@#%@@#*#   ====*.       
-            =******##*##********#*****#**********#*******#%*#--#@**@@%#   +===-        
-           =**=....:#*****#**#**#*#**#*********#********###..#@=.-#*#@*  ====+-        
-          +**..%@:.-*#*****#******#********************###%..=@@+.-#*#.  ++++=-        
-          =+=.+@*.:##***********************************#*#-.:@@@:.#*#.-#*+++++        
-            -.:..-#%*#**********************************@*#*=..-:.=##%#******+#        
-             :=-***%%*******************************%@#:%%**#**::+#%***********        
-        *:      +%@#*************************#*#*@@*:@@#@@****%#*##***********=        
-       .*.    :#**@@@#*********************##*@#-@@@#@@@@@#****%******#*******:        
-       .*+=--=**#*#@@@@+*#************#%*-%@+-*@@*==*@@#%*****#****#*********#         
-        :===+******@@@@@+**#*+##**##==@@@-@@@@@+===*===:%*****#**#*****#*****          
-          ++=++****%@@@@%#***+:#####=#@@@@@@#======*-==#**##**%@#*********#-           
-            --=-.+######*=*##*##**##@#======*+=+-+=+-#+***#*-..=@#******#-             
-                .-..*..*#**##*****#*+==**+==+-=##*#*@+****..-#@*=%******               
-      =+      :#%..-%+..:##*:****#=##*+****##%***##**+#**:.*@@#:=%##*=.                
-    .++        :*#:.=....##******#%#%%**#*****+*%#*#*#*#*.%@%+::%#***     +.           
-   .+==          +#*******%*#**+@@@@*+++**+**#********#%#=..:+*#@****     ++           
-   *==+        =**#@@@@@@@@@@%:.::::....#*+**#**:--:=-*%@@###%@@**#***#:++=+           
-   *===+#:=%@%#****#@@#**@@@@@-........:#*%@*#.@@%%@%##%****@@@@*#**++#====+           
-    *====+**********%###**%@@#**:..=***#@**##*#+++#**#*#*#**%@@%#***========           
-     .*===++***#**#*#******@@@#*******##**#**@%%@%@%*@*#****#@++#*+*=======            
-       .+*#+*+--************@@###****##****#*#@@@%*******#**+ =++.-*====+-             
-                 .*#********%=:+===+++*++**#*%@@@******#*++===+=+.  --:                
-        -###+-==#*********#:    =+#+===+=++#-     :#****++=+*===*: ++                  
-       +==+*+***********#-       .*====+=#-         :*#*+======+. ++*++                
-      -*==#.      ..:.              ...                 +====*=    +++*                
-      .*=*:                                              .-:                      
+                                    
+                                              
+                         ..                ..                         
+                       :Y&B?              ?B&Y:                       
+                       ~@YP@Y^          ^Y@PY@~                       
+                       ~@^!@&7          7&@!^@~                       
+                       ~@~.Y@J          J@J.~@~                       
+         .7!:          ~@~ .5@G        G@5. ~@~          :!7.         
+        ^5@@Y          ~@P~  5#~^:^^::~#5  ~P@~          Y@@5^        
+       7#@Y#@B:        :J&B! ^7J55YYY5Y7: !B&J:        :G@#5&#7       
+    :?#&Y: .J&#?.        G&Y.            .Y&G        .?#&J. :Y&#?.    
+  :?&&J.     .J&&?.      B5   :?:    :?:   5B      .?&&J.     .J&&?:  
+  ~@@Y  .!GBP7..7&#P7^   #G.  ~#~    ~#~  .G#   ^?P#&7..7PBG!.  Y@@~  
+  :J&5  Y@@@@@#!  ?P#@G! ?##!.          .!&#? !G@#P7  !#@@@@@Y  5&J:  
+  :Y@P. J&@@@@@&Y   :7G#B~?&@G55PPPPPP5YG@&?~B#G7:   Y&@@@@@&J .P@Y:  
+  :J&P.  ~@@@@@@#7.   !P@@BJJ~..^!!!!^  ~JJB@@P~   .7#@@@@@@~  .P@Y:  
+   ^#P    ^B@@@@@@!7BB#G!^.                .^!G#BB7!@@@@@@B^    P#^   
+  ^#@5     !P@@@@@@BJ7:                        :7JB@@@@@@G!     5@#^  
+  ~@@J      .7#@#Y~.     :^^              ^^:     .~Y#@#7.      J@@~  
+  ~@#?       .&@Y  .^7JYY#@&:            :&@#YYJ7^.  Y@&.       ?#@~  
+  ~@#?       .PGPPPPPG#G7~5&:            :&5~?G#GPP5PPGP.       ?#@~  
+  ~@@Y                   ~G&:            :&G!       .           Y@@~  
+  ~@@Y             .^~~!JB@#:            :&@GJ!~~^.             Y@@~  
+  :P@#Y5Y7^:...!Y5YG@@#5?JB&.            .&BJ?5#@@GY5Y!...:^7J5Y#@5:  
+   .YBBBBGPPPPPGBBJ~::.   ?@J^.        .^J@?   .::~JBBGPPPPPGBBBBY.   
+                          ?@@#GYYYYYYYYG&@@?                          
+                          ?@~ !@@G^^P@@! !@?                          
+                          ?@G5P@@Y  Y@@P5G@?                          
+                          ^YGGGP~    ~PGGGY^                          
+                                                                      
+                                                                      
+                                                                      
                                                                                        ";
             Console.Write(monsterB);
         }
@@ -144,26 +119,37 @@ namespace ConsoleApplication1
         public static void ImgMonster3()
         {
             string monsterC = @"                                                                                                    
-                             ...                                      
-         ?J?^.       ^5PGGPY^         .~!~        
-        :JJJJ?7^.   5@B7~!7B@5      :~?JJJ        
-        ?YYYY5G&G5^G@!      7@G  ^!?YJJJJJ!       
-        ?5555GB&&@@@~        ~@BP#BP5YJYY5J       
-        .BGBB##&&@@!          :#@&#BGP5PPG~       
-         7#&&&&@@@G   !?JJJJ~. :B@@&###BB5        
-          J@@@&B5Y.~JGBBB#&@#GP!:~YP&@@@#!.       
-       !5#&B5?:. .7G#G!.J&@@@@@BJ   ::?Y#@BJ.     
-      5@&5~.     !&&P. Y@@@@@@@&G:      .7&@Y     
-     ^@@?        !@&Y  5@@@@@@@#G:.       B@G.    
-     .#@G~       ~#&G^. !?B#G5&@P.    .:?B@#!     
-      ^5&@GY!:.  .^5#BP?^:~JPB&Y~  .!JB&&G?:      
-        :!PG&&B57^ .~5PPPPPPPY^. :PB#BY7:         
-            ^~?PPGG!   .:^:     ^&7~.             
-                 .B@~          7@5                
-                   G@~        !@G                 
-                    P@?      7@G                  
-                     Y@#77!7#@5                   
-                      :Y5GP55:                                                                   
+                                                                                  
+                                                                      
+                                                                      
+                     .^7J5Y?!!:        :!7?Y5J7^.                     
+                    JPJ~^^~~^JGY^    ^5GJ^~~^^~JP?                    
+                   YB! 7GP??P7:?BP~~PB7:7P?JPG7 !BY                   
+                  :&! Y#!J^^^B5..!?J!..5B^^^J!#Y !&:                  
+                  BB^J&J!@@@?^PP      PP^?@@&!J#J^BB                  
+                  &! 55^B&@@Y JP      PJ Y@@&B^55 ~&                  
+                  B^ JB7^?YY^7P?.:  :.?P7^JY?:7BJ :5                  
+                 J#^  ~JJ5Y??7: !Y  Y! :7??Y5JJ~  :J                  
+               .7@^          ^??????????^         ^&?.                
+               ^&J       .?BPY5J~::::~J5YPB?.      ^@:                
+               ^&      .?BP^.            .^PB?.    .&5:               
+            :?5P#     ^P#:                  ^#P^   .B@JY?.            
+          ^PGJ^?&     ?&7  .~~~?PGGGGP?~~~.  7&?   .#@::JGP^          
+     .~!PP&J.  ~&     7@B?PB&@@@@@@@@@@@@&BP?B@7   .&7.  .J&PP!~.     
+  .?PB@@@@&?.  ^BG.   .?#@@@&&&&&&&&&&&&&&@@@#?.  .?&.   .?&@@@@BP?.  
+ .G&&@&&&&&@B?: .#Y.    .?B@@@@@@&@@@&@@@@@B?.    7@~  :?B@&&&&&@&&G. 
+ B#~?@&&&&&&@@P:YY#P~      !7JP########P?7!     ^5#G?Y:P@@&&&&&&@?~#B 
+ #~ Y@&&&&&&&&&#J. 7GY~        ........       .7PJ. .J#&&&&&&&&&@Y ~# 
+ #5^?&&#&&&&&&&&B7  .!PG7..                .?J5J~  .7B&&&&&&&&#&&?:5# 
+ P@#G#BY@@&&#&&&&Y.    7@5B??!:........!??5YPB~    .Y&&&&&&@@@Y##G#@P 
+ .?P#@&&5Y5~.:^~:     7#? ::JYJ5BJJJJG5YJ::  J#7     :~^::~5Y5#&@#P?  
+    :^::             JB?       7B    B7       ?BJ             ::^.    
+                     55       7BY    YB7       55                     
+                     ?B5!~~7P5PJ      JP5P7~~!5B7                     
+                      .!!!!!!:          :!!!!!!:                      
+                                                                      
+                                                                      
+                                                                                                  
                                                                                                     ";
             Console.Write(monsterC);
         }
@@ -497,20 +483,19 @@ namespace ConsoleApplication1
                 
                 if (IsnotPass)
                 {
-                    ShowText("now I don't have any clue about that gym leader. \n" +
+                    ShowText("Now I don't have any clue about that gym leader. \n" +
                              "This city may give me some information of that gym leader and this city maybe a great place to start");
                 }
                 
                 IsnotPass = false;
                 while (true)
                 {
-                    ShowText("\nYou already clear this town");
                     ShowText("\nNow Where you want to go ?\n");
                     Console.WriteLine(
-                        "=======================================================================================================");
+                        "\n=======================================================================================================");
                     Console.WriteLine("1.Forest");
                     Console.WriteLine(
-                        "=======================================================================================================");
+                        "=======================================================================================================\n");
                     bool isTypeCorract = int.TryParse(Console.ReadLine(), out int playerchooes);
                     if (isTypeCorract && playerchooes == 1)
                     {
@@ -520,7 +505,9 @@ namespace ConsoleApplication1
 
                     if (!isTypeCorract || playerchooes != 1)
                     {
+                        Console.ForegroundColor = ConsoleColor.Red;
                         Console.WriteLine("Please Enter number 1");
+                        Console.ResetColor();
                         Console.ReadKey(true);
                         Console.Clear();
                     }
@@ -533,14 +520,13 @@ namespace ConsoleApplication1
                 
                 if (IsnotPass)
                 {
-                    ShowText("I heard someone who knows that gyn leader lives in this city \n" +
+                    ShowText("I heard someone who knows that gym leader lives in this city. \n" +
                              "I have to find that guy and ask him.");
                 }
                 
                 IsnotPass = false;
                 while (true)
                 {
-                    ShowText("\nYou already clear this town");
                     ShowText("\nNow Where you want to go ?\n");
                     Console.WriteLine(
                         "=======================================================================================================");
@@ -573,13 +559,15 @@ namespace ConsoleApplication1
 
                     if (!isTypeCorract || playerchooes != 1 && playerchooes != 2 && playerchooes != 3 )
                     {
-                        Console.WriteLine("Please Enter number 1 2 or 3");
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine("Please Enter number 1 2 or 3.");
+                        Console.ResetColor();
                         Console.ReadKey(true);
                         Console.Clear();
                     }
                     if (isTypeCorract && playerchooes == 2  && IsGym1notPass == false )
                     {
-                        Console.WriteLine("you already clear Gym Leader");
+                        Console.WriteLine("You've defeated Gym Leader.");
                         Console.ReadKey(true);
                         Console.Clear();
                     }
@@ -600,7 +588,6 @@ namespace ConsoleApplication1
                 IsnotPass = false;
                 while (true)
                 {
-                    ShowText("\nYou already clear this town");
                     ShowText("\nNow Where you want to go ?\n");
                     Console.WriteLine(
                         "=======================================================================================================");
@@ -626,13 +613,15 @@ namespace ConsoleApplication1
 
                     if (!isTypeCorract || playerchooes != 1 && playerchooes != 2)
                     {
-                        Console.WriteLine("Please Enter number 1 or 2");
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine("Please Enter number 1 or 2.");
+                        Console.ResetColor();
                         Console.ReadKey(true);
                         Console.Clear();
                     }
                     if (isTypeCorract && playerchooes == 2 && IsGym2notPass == false)
                     {
-                        Console.WriteLine("you already clear gym leader");
+                        Console.WriteLine("You've defeated Gym Leader.");
                         Console.ReadKey(true);
                         Console.Clear();
                     }
@@ -653,13 +642,15 @@ namespace ConsoleApplication1
 
                     while (passturn > 0)
                     {
-                        ShowText("you\'re going to the first forest\n ");
-                        ShowText("!!! \nyour found a monster");
                         Random random = new Random();
                         int num = random.Next(1, 101);
                         //set random monster forest1
                         if (forest == 1)
                         {
+                            ShowText("\n\nYou\'re going to the first forest.\n\n ");
+                            Console.ForegroundColor = ConsoleColor.Cyan;
+                            ShowText("!!! You found a monster");
+                            Console.ResetColor();
                             if (num <= 85)
                             {
                                 int rd = random.Next(1, 8);
@@ -710,6 +701,10 @@ namespace ConsoleApplication1
                         //set random monster forest2
                         if (forest == 2)
                         {
+                            ShowText("You\'re going to the second forest\n\n ");
+                            Console.ForegroundColor = ConsoleColor.Cyan;
+                            ShowText("!!! You found a monster");
+                            Console.ResetColor();
                             if (num <= 85)
                             {
                                 int rd = random.Next(1, 8);
@@ -757,14 +752,17 @@ namespace ConsoleApplication1
                             }
                         }
 
-
-                        ShowText($" {forestmonster.NameMonster} appear!!\n");
+                        Console.ForegroundColor = ConsoleColor.Cyan;
+                        ShowText($" {forestmonster.NameMonster} appeared !!!\n\n");
+                        Console.ResetColor();
                         int playerOrder;
                         currentHpMonsterForest = forestmonster.Hp;
                         currentHpMonsterPlayer = Player.playerMonster[0].Hp;
 
                         //show monsterForestStatus
-                        Console.WriteLine($"{forestmonster.NameMonster}  has {forestmonster.LevelMonster} Level .");
+                        Console.ForegroundColor = ConsoleColor.DarkRed;
+                        Console.WriteLine("(Enemy)");
+                        Console.WriteLine($"{forestmonster.NameMonster}  Level {forestmonster.LevelMonster}.");
                         if (forestmonster.Attack > forestmonster.SpAttack)
                         {
                             Console.WriteLine($"HP: {currentHpMonsterForest} ATK: {forestmonster.Attack}");
@@ -772,7 +770,7 @@ namespace ConsoleApplication1
 
                         if (forestmonster.Attack < forestmonster.SpAttack)
                         {
-                            Console.WriteLine($"HP: {currentHpMonsterForest} Sp ATK: {forestmonster.SpAttack}");
+                            Console.WriteLine($"HP: {currentHpMonsterForest} Special ATK: {forestmonster.SpAttack}");
                         }
 
                         if (forestmonster.SpAttack == forestmonster.Attack)
@@ -785,7 +783,7 @@ namespace ConsoleApplication1
 
                             if (randomdef == 1)
                             {
-                                Console.WriteLine($"HP: {currentHpMonsterForest} Sp ATK: {forestmonster.SpAttack}");
+                                Console.WriteLine($"HP: {currentHpMonsterForest} Special ATK: {forestmonster.SpAttack}");
                             }
                         }
 
@@ -814,8 +812,10 @@ namespace ConsoleApplication1
 
 
                         //show monsterPlayerStatus
+                        Console.ForegroundColor = ConsoleColor.DarkBlue;
+                        Console.WriteLine($"\n({username}'s Monster)");
                         Console.WriteLine(
-                            $"{Player.playerMonster[0].NameMonster}  has {Player.playerMonster[0].LevelMonster} Level .");
+                            $"{Player.playerMonster[0].NameMonster} Level {Player.playerMonster[0].LevelMonster}.");
                         if (Player.playerMonster[0].Attack > Player.playerMonster[0].SpAttack)
                         {
                             Console.WriteLine(
@@ -840,9 +840,10 @@ namespace ConsoleApplication1
                             if (randomdef == 1)
                             {
                                 Console.WriteLine(
-                                    $"HP: {currentHpMonsterPlayer} Sp ATK: {Player.playerMonster[0].SpAttack}");
+                                    $"HP: {currentHpMonsterPlayer} Special ATK: {Player.playerMonster[0].SpAttack}");
                             }
                         }
+                        
 
 
                         //set typeDefMonsterPlayer
@@ -882,14 +883,21 @@ namespace ConsoleApplication1
                             Console.WriteLine(
                                 $"SpDef: {currentDefMonsterPlayer} Speed: {Player.playerMonster[0].Speed}");
                         }
+                        Console.ResetColor();
 
                         //battle
                         while (true)
                         {
                             int showdamage = 0;
 
-                            ShowText("Please choose your order\n");
-                            Console.WriteLine("1. Attack \n 2.Defense");
+
+                            Console.ForegroundColor = ConsoleColor.DarkCyan;
+                            ShowText("\nPlease choose your order\n");
+                            Console.ForegroundColor = ConsoleColor.Red;
+                            Console.WriteLine("1.Attack ");
+                            Console.ForegroundColor = ConsoleColor.Blue;
+                            Console.WriteLine("2.Defense");
+                            Console.ResetColor();
                             bool isTypeCorract = int.TryParse(Console.ReadLine(), out playerOrder);
                             if (isTypeCorract && playerOrder == 1 || isTypeCorract && playerOrder == 2)
                             {
@@ -942,8 +950,10 @@ namespace ConsoleApplication1
 
                                         }
 
+                                        Console.ForegroundColor = ConsoleColor.Blue;
                                         Console.WriteLine(
-                                            $"{Player.playerMonster[0].NameMonster} Attack {forestmonster.NameMonster}");
+                                            $"\n{Player.playerMonster[0].NameMonster} Attack {forestmonster.NameMonster}");
+                                        Console.ResetColor();
                                         Console.WriteLine($"{forestmonster.NameMonster} takes {showdamage} damaged.");
                                         Console.WriteLine(
                                             $"{forestmonster.NameMonster}  has {currentHpMonsterForest} HP remaining.");
@@ -966,7 +976,7 @@ namespace ConsoleApplication1
                                                 Console.WriteLine(
                                                     $"{Player.playerMonster[0].NameMonster} Monster is Level up");
                                                 Console.WriteLine(
-                                                    $"{Player.playerMonster[0].NameMonster} Level up to Level {Player.playerMonster[0].LevelMonster + 1} ");
+                                                    $"{Player.playerMonster[0].NameMonster} Level up to Level {Player.playerMonster[0].LevelMonster + 1} \n");
                                                 Monster updateMonster =
                                                     Monster.CaculateStat(Player.playerMonster[0].LevelMonster + 1,
                                                         Player.playerMonster[0].Index);
@@ -1041,8 +1051,10 @@ namespace ConsoleApplication1
 
                                             }
 
+                                            Console.ForegroundColor = ConsoleColor.DarkRed;
                                             Console.WriteLine(
-                                                $"{forestmonster.NameMonster} Attack {Player.playerMonster[0].NameMonster} ");
+                                                $"\n{forestmonster.NameMonster} Attack {Player.playerMonster[0].NameMonster} ");
+                                            Console.ResetColor();
                                             Console.WriteLine(
                                                 $"{Player.playerMonster[0].NameMonster} takes {showdamage} damaged.");
                                             Console.WriteLine(
@@ -1051,7 +1063,9 @@ namespace ConsoleApplication1
                                             //yes
                                             if (currentHpMonsterPlayer <= 0)
                                             {
-                                                ShowText("you died");
+                                                Console.ForegroundColor = ConsoleColor.DarkRed;
+                                                ShowText("You died.\n");
+                                                Console.ResetColor();
                                                 if (forest ==1)
                                                 {
                                                     Town(1 ,username);
@@ -1120,8 +1134,10 @@ namespace ConsoleApplication1
 
                                             }
 
+                                            Console.ForegroundColor = ConsoleColor.Blue;
                                             Console.WriteLine(
-                                                $"{Player.playerMonster[0].NameMonster} Attack {forestmonster.NameMonster}");
+                                                $"\n{Player.playerMonster[0].NameMonster} Attack {forestmonster.NameMonster}");
+                                            Console.ResetColor();
                                             Console.WriteLine(
                                                 $"{forestmonster.NameMonster} takes {showdamage} damaged.");
                                             Console.WriteLine(
@@ -1146,7 +1162,7 @@ namespace ConsoleApplication1
                                                     Console.WriteLine(
                                                         $"{Player.playerMonster[0].NameMonster} Monster is Level up");
                                                     Console.WriteLine(
-                                                        $"{Player.playerMonster[0].NameMonster} Level up to Level {Player.playerMonster[0].LevelMonster + 1} ");
+                                                        $"{Player.playerMonster[0].NameMonster} Level up to Level {Player.playerMonster[0].LevelMonster + 1} \n");
                                                     Monster updateMonster =
                                                         Monster.CaculateStat(Player.playerMonster[0].LevelMonster + 1,
                                                             Player.playerMonster[0].Index);
@@ -1221,8 +1237,10 @@ namespace ConsoleApplication1
 
                                                 }
 
+                                                Console.ForegroundColor = ConsoleColor.DarkRed;
                                                 Console.WriteLine(
-                                                    $"{forestmonster.NameMonster} Attack {Player.playerMonster[0].NameMonster} ");
+                                                    $"\n{forestmonster.NameMonster} Attack {Player.playerMonster[0].NameMonster} ");
+                                                Console.ResetColor();
                                                 Console.WriteLine(
                                                     $"{Player.playerMonster[0].NameMonster} takes {showdamage} damaged.");
                                                 Console.WriteLine(
@@ -1231,7 +1249,9 @@ namespace ConsoleApplication1
                                                 //yes
                                                 if (currentHpMonsterPlayer <= 0)
                                                 {
-                                                    ShowText("you died");
+                                                    Console.ForegroundColor = ConsoleColor.DarkRed;
+                                                    ShowText("You died.\n");
+                                                    Console.ResetColor();
                                                     if (forest ==1)
                                                     {
                                                         Town(1,username);
@@ -1303,8 +1323,10 @@ namespace ConsoleApplication1
 
                                             }
 
+                                            Console.ForegroundColor = ConsoleColor.DarkRed;
                                             Console.WriteLine(
-                                                $"{forestmonster.NameMonster} Attack {Player.playerMonster[0].NameMonster} ");
+                                                $"\n{forestmonster.NameMonster} Attack {Player.playerMonster[0].NameMonster} ");
+                                            Console.ResetColor();
                                             Console.WriteLine(
                                                 $"{Player.playerMonster[0].NameMonster} takes {showdamage} damaged.");
                                             Console.WriteLine(
@@ -1314,7 +1336,9 @@ namespace ConsoleApplication1
                                             //yes
                                             if (currentHpMonsterPlayer <= 0)
                                             {
-                                                ShowText("you died");
+                                                Console.ForegroundColor = ConsoleColor.DarkRed;
+                                                ShowText("You died.\n");
+                                                Console.ResetColor();
                                                 if (forest ==1)
                                                 {
                                                     Town(1,username);
@@ -1373,8 +1397,10 @@ namespace ConsoleApplication1
 
                                                 }
 
+                                                Console.ForegroundColor = ConsoleColor.Blue;
                                                 Console.WriteLine(
-                                                    $"{Player.playerMonster[0].NameMonster} Attack {forestmonster.NameMonster}");
+                                                    $"\n{Player.playerMonster[0].NameMonster} Attack {forestmonster.NameMonster}");
+                                                Console.ResetColor();
                                                 Console.WriteLine(
                                                     $"{forestmonster.NameMonster} takes {showdamage} damaged.");
                                                 Console.WriteLine(
@@ -1398,7 +1424,7 @@ namespace ConsoleApplication1
                                                         Console.WriteLine(
                                                             $"{Player.playerMonster[0].NameMonster} Monster is Level up");
                                                         Console.WriteLine(
-                                                            $"{Player.playerMonster[0].NameMonster} Level up to Level {Player.playerMonster[0].LevelMonster + 1} ");
+                                                            $"{Player.playerMonster[0].NameMonster} Level up to Level {Player.playerMonster[0].LevelMonster + 1} \n");
                                                         Monster updateMonster =
                                                             Monster.CaculateStat(
                                                                 Player.playerMonster[0].LevelMonster + 1,
@@ -1474,8 +1500,10 @@ namespace ConsoleApplication1
 
                                         }
 
+                                        Console.ForegroundColor = ConsoleColor.DarkRed;
                                         Console.WriteLine(
-                                            $"{forestmonster.NameMonster} Attack {Player.playerMonster[0].NameMonster} ");
+                                            $"\n{forestmonster.NameMonster} Attack {Player.playerMonster[0].NameMonster} ");
+                                        Console.ResetColor();
                                         Console.WriteLine(
                                             $"{Player.playerMonster[0].NameMonster} takes {showdamage} damaged.");
                                         Console.WriteLine(
@@ -1485,7 +1513,9 @@ namespace ConsoleApplication1
                                         //yes
                                         if (currentHpMonsterPlayer <= 0)
                                         {
-                                            ShowText("you died");
+                                            Console.ForegroundColor = ConsoleColor.DarkRed;
+                                            ShowText("You died.\n");
+                                            Console.ResetColor();
                                             if (forest ==1)
                                             {
                                                 Town(1,username);
@@ -1540,8 +1570,10 @@ namespace ConsoleApplication1
 
                                             }
 
+                                            Console.ForegroundColor = ConsoleColor.Blue;
                                             Console.WriteLine(
-                                                $"{Player.playerMonster[0].NameMonster} Attack {forestmonster.NameMonster}");
+                                                $"\n{Player.playerMonster[0].NameMonster} Attack {forestmonster.NameMonster}");
+                                            Console.ResetColor();
                                             Console.WriteLine(
                                                 $"{forestmonster.NameMonster} takes {showdamage} damaged.");
                                             Console.WriteLine(
@@ -1565,7 +1597,7 @@ namespace ConsoleApplication1
                                                     Console.WriteLine(
                                                         $"{Player.playerMonster[0].NameMonster} Monster is Level up");
                                                     Console.WriteLine(
-                                                        $"{Player.playerMonster[0].NameMonster} Level up to Level {Player.playerMonster[0].LevelMonster + 1} ");
+                                                        $"{Player.playerMonster[0].NameMonster} Level up to Level {Player.playerMonster[0].LevelMonster + 1} \n");
                                                     Monster updateMonster =
                                                         Monster.CaculateStat(Player.playerMonster[0].LevelMonster + 1,
                                                             Player.playerMonster[0].Index);
@@ -1651,8 +1683,10 @@ namespace ConsoleApplication1
 
                                     }
 
+                                    Console.ForegroundColor = ConsoleColor.DarkRed;
                                     Console.WriteLine(
-                                        $"{forestmonster.NameMonster} Attack {Player.playerMonster[0].NameMonster} ");
+                                        $"\n{forestmonster.NameMonster} Attack {Player.playerMonster[0].NameMonster} ");
+                                    Console.ResetColor();
                                     Console.WriteLine(
                                         $"{Player.playerMonster[0].NameMonster} takes {showdamage} damaged.");
                                     Console.WriteLine(
@@ -1661,7 +1695,9 @@ namespace ConsoleApplication1
                                     //yes
                                     if (currentHpMonsterPlayer <= 0)
                                     {
-                                        ShowText("you died");
+                                        Console.ForegroundColor = ConsoleColor.DarkRed;
+                                        ShowText("You died.\n");
+                                        Console.ResetColor();
                                         if (forest ==1)
                                         {
                                             Town(1,username);
@@ -1737,8 +1773,10 @@ namespace ConsoleApplication1
 
                                         }
 
+                                        Console.ForegroundColor = ConsoleColor.DarkRed;
                                         Console.WriteLine(
-                                            $"{forestmonster.NameMonster} Attack {Player.playerMonster[0].NameMonster} ");
+                                            $"\n{forestmonster.NameMonster} Attack {Player.playerMonster[0].NameMonster} ");
+                                        Console.ResetColor();
                                         Console.WriteLine(
                                             $"{Player.playerMonster[0].NameMonster} takes {showdamage} damaged.");
                                         Console.WriteLine(
@@ -1747,7 +1785,9 @@ namespace ConsoleApplication1
                                         //yes
                                         if (currentHpMonsterPlayer <= 0)
                                         {
-                                            ShowText("you died");
+                                            Console.ForegroundColor = ConsoleColor.DarkRed;
+                                            ShowText("You died.\n");
+                                            Console.ResetColor();
                                             if (forest ==1)
                                             {
                                                 Town(1,username);
@@ -1808,8 +1848,10 @@ namespace ConsoleApplication1
 
                                         }
 
+                                        Console.ForegroundColor = ConsoleColor.DarkRed;
                                         Console.WriteLine(
-                                            $"{forestmonster.NameMonster} Attack {Player.playerMonster[0].NameMonster} ");
+                                            $"\n{forestmonster.NameMonster} Attack {Player.playerMonster[0].NameMonster} ");
+                                        Console.ResetColor();
                                         Console.WriteLine(
                                             $"{Player.playerMonster[0].NameMonster} takes {showdamage} damaged.");
                                         Console.WriteLine(
@@ -1819,7 +1861,9 @@ namespace ConsoleApplication1
                                         //yes
                                         if (currentHpMonsterPlayer <= 0)
                                         {
-                                            ShowText("you died");
+                                            Console.ForegroundColor = ConsoleColor.DarkRed;
+                                            ShowText("You died.\n");
+                                            Console.ResetColor();
                                             if (forest ==1)
                                             {
                                                 Town(1,username);
@@ -1891,8 +1935,10 @@ namespace ConsoleApplication1
 
                                     }
 
+                                    Console.ForegroundColor = ConsoleColor.DarkRed;
                                     Console.WriteLine(
-                                        $"{forestmonster.NameMonster} Attack {Player.playerMonster[0].NameMonster} ");
+                                        $"\n{forestmonster.NameMonster} Attack {Player.playerMonster[0].NameMonster} ");
+                                    Console.ResetColor();
                                     Console.WriteLine(
                                         $"{Player.playerMonster[0].NameMonster} takes {showdamage} damaged.");
                                     Console.WriteLine(
@@ -1902,7 +1948,9 @@ namespace ConsoleApplication1
                                     //yes
                                     if (currentHpMonsterPlayer <= 0)
                                     {
-                                        ShowText("you died");
+                                        Console.ForegroundColor = ConsoleColor.DarkRed;
+                                        ShowText("You died.\n");
+                                        Console.ResetColor();
                                         if (forest ==1)
                                         {
                                             Town(1,username);
@@ -1933,7 +1981,9 @@ namespace ConsoleApplication1
 
                             if (!isTypeCorract || playerOrder < 1 || playerOrder > 2)
                             {
-                                Console.WriteLine("Please Enter number 1 or 2");
+                                Console.ForegroundColor = ConsoleColor.Red;
+                                Console.WriteLine("Please Enter number 1 or 2.");
+                                Console.ResetColor();
                                 Console.ReadKey(true);
                             }
                         }
@@ -2010,7 +2060,9 @@ namespace ConsoleApplication1
                         }
 
 
-                        ShowText($" {forestmonster.NameMonster} appear!!\n");
+                        Console.ForegroundColor = ConsoleColor.Cyan;
+                        ShowText($" {forestmonster.NameMonster} appeared !!!\n\n");
+                        Console.ResetColor();
                         int playerOrder;
                         currentHpMonsterForest = forestmonster.Hp;
                         currentHpMonsterPlayer = Player.playerMonster[0].Hp;
@@ -2024,7 +2076,7 @@ namespace ConsoleApplication1
 
                         if (forestmonster.Attack < forestmonster.SpAttack)
                         {
-                            Console.WriteLine($"HP: {currentHpMonsterForest} Sp ATK: {forestmonster.SpAttack}");
+                            Console.WriteLine($"HP: {currentHpMonsterForest} Special ATK: {forestmonster.SpAttack}");
                         }
 
                         if (forestmonster.SpAttack == forestmonster.Attack)
@@ -2037,7 +2089,7 @@ namespace ConsoleApplication1
 
                             if (randomdef == 1)
                             {
-                                Console.WriteLine($"HP: {currentHpMonsterForest} Sp ATK: {forestmonster.SpAttack}");
+                                Console.WriteLine($"HP: {currentHpMonsterForest} Special ATK: {forestmonster.SpAttack}");
                             }
                         }
 
@@ -2079,7 +2131,7 @@ namespace ConsoleApplication1
                             if (randomdef == 1)
                             {
                                 Console.WriteLine(
-                                    $"HP: {currentHpMonsterPlayer} Sp ATK: {Player.playerMonster[0].SpAttack}");
+                                    $"HP: {currentHpMonsterPlayer} Special ATK: {Player.playerMonster[0].SpAttack}");
                             }
                         }
 
@@ -2127,8 +2179,13 @@ namespace ConsoleApplication1
                         {
                             int showdamage = 0;
 
-                            ShowText("Please choose your order\n");
-                            Console.WriteLine("1. Attack \n 2.Defense");
+                            Console.ForegroundColor = ConsoleColor.DarkCyan;
+                            ShowText("\nPlease choose your order\n");
+                            Console.ForegroundColor = ConsoleColor.Red;
+                            Console.WriteLine("1.Attack ");
+                            Console.ForegroundColor = ConsoleColor.Blue;
+                            Console.WriteLine("2.Defense");
+                            Console.ResetColor();
                             bool isTypeCorract = int.TryParse(Console.ReadLine(), out playerOrder);
                             if (isTypeCorract && playerOrder == 1 || isTypeCorract && playerOrder == 2)
                             {
@@ -2181,8 +2238,10 @@ namespace ConsoleApplication1
 
                                         }
 
+                                        Console.ForegroundColor = ConsoleColor.Blue;
                                         Console.WriteLine(
-                                            $"{Player.playerMonster[0].NameMonster} Attack {forestmonster.NameMonster}");
+                                            $"\n{Player.playerMonster[0].NameMonster} Attack {forestmonster.NameMonster}");
+                                        Console.ResetColor();
                                         Console.WriteLine($"{forestmonster.NameMonster} takes {showdamage} damaged.");
                                         Console.WriteLine(
                                             $"{forestmonster.NameMonster}  has {currentHpMonsterForest} HP remaining.");
@@ -2205,7 +2264,7 @@ namespace ConsoleApplication1
                                                 Console.WriteLine(
                                                     $"{Player.playerMonster[0].NameMonster} Monster is Level up");
                                                 Console.WriteLine(
-                                                    $"{Player.playerMonster[0].NameMonster} Level up to Level {Player.playerMonster[0].LevelMonster + 1} ");
+                                                    $"{Player.playerMonster[0].NameMonster} Level up to Level {Player.playerMonster[0].LevelMonster + 1} \n");
                                                 Monster updateMonster =
                                                     Monster.CaculateStat(Player.playerMonster[0].LevelMonster + 1,
                                                         Player.playerMonster[0].Index);
@@ -2280,8 +2339,10 @@ namespace ConsoleApplication1
 
                                             }
 
+                                            Console.ForegroundColor = ConsoleColor.DarkRed;
                                             Console.WriteLine(
-                                                $"{forestmonster.NameMonster} Attack {Player.playerMonster[0].NameMonster} ");
+                                                $"\n{forestmonster.NameMonster} Attack {Player.playerMonster[0].NameMonster} ");
+                                            Console.ResetColor();
                                             Console.WriteLine(
                                                 $"{Player.playerMonster[0].NameMonster} takes {showdamage} damaged.");
                                             Console.WriteLine(
@@ -2290,7 +2351,9 @@ namespace ConsoleApplication1
                                             //yes
                                             if (currentHpMonsterPlayer <= 0)
                                             {
-                                                ShowText("you died");
+                                                Console.ForegroundColor = ConsoleColor.DarkRed;
+                                                ShowText("You died.\n");
+                                                Console.ResetColor();
                                                 if (gym == 1)
                                                 {
                                                     Town(2,username);
@@ -2359,8 +2422,10 @@ namespace ConsoleApplication1
 
                                             }
 
+                                            Console.ForegroundColor = ConsoleColor.Blue;
                                             Console.WriteLine(
-                                                $"{Player.playerMonster[0].NameMonster} Attack {forestmonster.NameMonster}");
+                                                $"\n{Player.playerMonster[0].NameMonster} Attack {forestmonster.NameMonster}");
+                                            Console.ResetColor();
                                             Console.WriteLine(
                                                 $"{forestmonster.NameMonster} takes {showdamage} damaged.");
                                             Console.WriteLine(
@@ -2385,7 +2450,7 @@ namespace ConsoleApplication1
                                                     Console.WriteLine(
                                                         $"{Player.playerMonster[0].NameMonster} Monster is Level up");
                                                     Console.WriteLine(
-                                                        $"{Player.playerMonster[0].NameMonster} Level up to Level {Player.playerMonster[0].LevelMonster + 1} ");
+                                                        $"{Player.playerMonster[0].NameMonster} Level up to Level {Player.playerMonster[0].LevelMonster + 1} \n");
                                                     Monster updateMonster =
                                                         Monster.CaculateStat(Player.playerMonster[0].LevelMonster + 1,
                                                             Player.playerMonster[0].Index);
@@ -2460,8 +2525,10 @@ namespace ConsoleApplication1
 
                                                 }
 
+                                                Console.ForegroundColor = ConsoleColor.DarkRed;
                                                 Console.WriteLine(
-                                                    $"{forestmonster.NameMonster} Attack {Player.playerMonster[0].NameMonster} ");
+                                                    $"\n{forestmonster.NameMonster} Attack {Player.playerMonster[0].NameMonster} ");
+                                                Console.ResetColor();
                                                 Console.WriteLine(
                                                     $"{Player.playerMonster[0].NameMonster} takes {showdamage} damaged.");
                                                 Console.WriteLine(
@@ -2470,7 +2537,9 @@ namespace ConsoleApplication1
                                                 //yes
                                                 if (currentHpMonsterPlayer <= 0)
                                                 {
-                                                    ShowText("you died");
+                                                    Console.ForegroundColor = ConsoleColor.DarkRed;
+                                                    ShowText("You died.\n");
+                                                    Console.ResetColor();
                                                     if (gym == 1)
                                                     {
                                                         Town(2,username);
@@ -2541,8 +2610,10 @@ namespace ConsoleApplication1
 
                                             }
 
+                                            Console.ForegroundColor = ConsoleColor.DarkRed;
                                             Console.WriteLine(
-                                                $"{forestmonster.NameMonster} Attack {Player.playerMonster[0].NameMonster} ");
+                                                $"\n{forestmonster.NameMonster} Attack {Player.playerMonster[0].NameMonster} ");
+                                            Console.ResetColor();
                                             Console.WriteLine(
                                                 $"{Player.playerMonster[0].NameMonster} takes {showdamage} damaged.");
                                             Console.WriteLine(
@@ -2552,7 +2623,9 @@ namespace ConsoleApplication1
                                             //yes
                                             if (currentHpMonsterPlayer <= 0)
                                             {
-                                                ShowText("you died");
+                                                Console.ForegroundColor = ConsoleColor.DarkRed;
+                                                ShowText("You died.\n");
+                                                Console.ResetColor();
                                                 if (gym == 1)
                                                 {
                                                     Town(2,username);
@@ -2611,8 +2684,10 @@ namespace ConsoleApplication1
 
                                                 }
 
+                                                Console.ForegroundColor = ConsoleColor.Blue;
                                                 Console.WriteLine(
-                                                    $"{Player.playerMonster[0].NameMonster} Attack {forestmonster.NameMonster}");
+                                                    $"\n{Player.playerMonster[0].NameMonster} Attack {forestmonster.NameMonster}");
+                                                Console.ResetColor();
                                                 Console.WriteLine(
                                                     $"{forestmonster.NameMonster} takes {showdamage} damaged.");
                                                 Console.WriteLine(
@@ -2636,7 +2711,7 @@ namespace ConsoleApplication1
                                                         Console.WriteLine(
                                                             $"{Player.playerMonster[0].NameMonster} Monster is Level up");
                                                         Console.WriteLine(
-                                                            $"{Player.playerMonster[0].NameMonster} Level up to Level {Player.playerMonster[0].LevelMonster + 1} ");
+                                                            $"{Player.playerMonster[0].NameMonster} Level up to Level {Player.playerMonster[0].LevelMonster + 1} \n");
                                                         Monster updateMonster =
                                                             Monster.CaculateStat(
                                                                 Player.playerMonster[0].LevelMonster + 1,
@@ -2712,8 +2787,10 @@ namespace ConsoleApplication1
 
                                         }
 
+                                        Console.ForegroundColor = ConsoleColor.DarkRed;
                                         Console.WriteLine(
-                                            $"{forestmonster.NameMonster} Attack {Player.playerMonster[0].NameMonster} ");
+                                            $"\n{forestmonster.NameMonster} Attack {Player.playerMonster[0].NameMonster} ");
+                                        Console.ResetColor();
                                         Console.WriteLine(
                                             $"{Player.playerMonster[0].NameMonster} takes {showdamage} damaged.");
                                         Console.WriteLine(
@@ -2723,7 +2800,9 @@ namespace ConsoleApplication1
                                         //yes
                                         if (currentHpMonsterPlayer <= 0)
                                         {
-                                            ShowText("you died");
+                                            Console.ForegroundColor = ConsoleColor.DarkRed;
+                                            ShowText("You died.\n");
+                                            Console.ResetColor();
                                             if (gym == 1)
                                             {
                                                 Town(2,username);
@@ -2778,8 +2857,10 @@ namespace ConsoleApplication1
 
                                             }
 
+                                            Console.ForegroundColor = ConsoleColor.Blue;
                                             Console.WriteLine(
-                                                $"{Player.playerMonster[0].NameMonster} Attack {forestmonster.NameMonster}");
+                                                $"\n{Player.playerMonster[0].NameMonster} Attack {forestmonster.NameMonster}");
+                                            Console.ResetColor();
                                             Console.WriteLine(
                                                 $"{forestmonster.NameMonster} takes {showdamage} damaged.");
                                             Console.WriteLine(
@@ -2803,7 +2884,7 @@ namespace ConsoleApplication1
                                                     Console.WriteLine(
                                                         $"{Player.playerMonster[0].NameMonster} Monster is Level up");
                                                     Console.WriteLine(
-                                                        $"{Player.playerMonster[0].NameMonster} Level up to Level {Player.playerMonster[0].LevelMonster + 1} ");
+                                                        $"{Player.playerMonster[0].NameMonster} Level up to Level {Player.playerMonster[0].LevelMonster + 1} \n");
                                                     Monster updateMonster =
                                                         Monster.CaculateStat(Player.playerMonster[0].LevelMonster + 1,
                                                             Player.playerMonster[0].Index);
@@ -2889,8 +2970,10 @@ namespace ConsoleApplication1
 
                                     }
 
+                                    Console.ForegroundColor = ConsoleColor.DarkRed;
                                     Console.WriteLine(
-                                        $"{forestmonster.NameMonster} Attack {Player.playerMonster[0].NameMonster} ");
+                                        $"\n{forestmonster.NameMonster} Attack {Player.playerMonster[0].NameMonster} ");
+                                    Console.ResetColor();
                                     Console.WriteLine(
                                         $"{Player.playerMonster[0].NameMonster} takes {showdamage} damaged.");
                                     Console.WriteLine(
@@ -2899,7 +2982,9 @@ namespace ConsoleApplication1
                                     //yes
                                     if (currentHpMonsterPlayer <= 0)
                                     {
-                                        ShowText("you died");
+                                        Console.ForegroundColor = ConsoleColor.DarkRed;
+                                        ShowText("You died.\n");
+                                        Console.ResetColor();
                                         if (gym == 1)
                                         {
                                             Town(2,username);
@@ -2975,8 +3060,10 @@ namespace ConsoleApplication1
 
                                         }
 
+                                        Console.ForegroundColor = ConsoleColor.DarkRed;
                                         Console.WriteLine(
-                                            $"{forestmonster.NameMonster} Attack {Player.playerMonster[0].NameMonster} ");
+                                            $"\n{forestmonster.NameMonster} Attack {Player.playerMonster[0].NameMonster} ");
+                                        Console.ResetColor();
                                         Console.WriteLine(
                                             $"{Player.playerMonster[0].NameMonster} takes {showdamage} damaged.");
                                         Console.WriteLine(
@@ -2985,7 +3072,9 @@ namespace ConsoleApplication1
                                         //yes
                                         if (currentHpMonsterPlayer <= 0)
                                         {
-                                            ShowText("you died");
+                                            Console.ForegroundColor = ConsoleColor.DarkRed;
+                                            ShowText("You died.\n");
+                                            Console.ResetColor();
                                             if (gym == 1)
                                             {
                                                 Town(2,username);
@@ -3046,8 +3135,10 @@ namespace ConsoleApplication1
 
                                         }
 
+                                        Console.ForegroundColor = ConsoleColor.DarkRed;
                                         Console.WriteLine(
-                                            $"{forestmonster.NameMonster} Attack {Player.playerMonster[0].NameMonster} ");
+                                            $"\n{forestmonster.NameMonster} Attack {Player.playerMonster[0].NameMonster} ");
+                                        Console.ResetColor();
                                         Console.WriteLine(
                                             $"{Player.playerMonster[0].NameMonster} takes {showdamage} damaged.");
                                         Console.WriteLine(
@@ -3057,7 +3148,9 @@ namespace ConsoleApplication1
                                         //yes
                                         if (currentHpMonsterPlayer <= 0)
                                         {
-                                            ShowText("you died");
+                                            Console.ForegroundColor = ConsoleColor.DarkRed;
+                                            ShowText("You died.\n");
+                                            Console.ResetColor();
                                             if (gym == 1)
                                             {
                                                 Town(2,username);
@@ -3129,8 +3222,10 @@ namespace ConsoleApplication1
 
                                     }
 
+                                    Console.ForegroundColor = ConsoleColor.DarkRed;
                                     Console.WriteLine(
-                                        $"{forestmonster.NameMonster} Attack {Player.playerMonster[0].NameMonster} ");
+                                        $"\n{forestmonster.NameMonster} Attack {Player.playerMonster[0].NameMonster} ");
+                                    Console.ResetColor();
                                     Console.WriteLine(
                                         $"{Player.playerMonster[0].NameMonster} takes {showdamage} damaged.");
                                     Console.WriteLine(
@@ -3140,7 +3235,9 @@ namespace ConsoleApplication1
                                     //yes
                                     if (currentHpMonsterPlayer <= 0)
                                     {
-                                        ShowText("you died");
+                                        Console.ForegroundColor = ConsoleColor.DarkRed;
+                                        ShowText("You died.\n");
+                                        Console.ResetColor();
                                         if (gym == 1)
                                         {
                                             Town(2,username);
@@ -3171,7 +3268,9 @@ namespace ConsoleApplication1
 
                             if (!isTypeCorract || playerOrder < 1 || playerOrder > 2)
                             {
-                                Console.WriteLine("Please Enter number 1 or 2");
+                                Console.ForegroundColor = ConsoleColor.Red;
+                                Console.WriteLine("Please Enter number 1 or 2.");
+                                Console.ResetColor();
                                 Console.ReadKey(true);
                             }
                         }
@@ -3183,7 +3282,7 @@ namespace ConsoleApplication1
                         Console.WriteLine("Gym leader 2 : Okay I lost.");
                         Console.WriteLine($"{username} : Do you know someone with a Red sun badge?");
                         Console.WriteLine("Gym leader 2 : Why? Did you have any problem?");
-                        Console.WriteLine($"{username} : That guy stole my monster and I have to find him back.");
+                        Console.WriteLine($"{username} : That guy kidnapped my monster and I have to find him back.");
                         Console.WriteLine("Arghhh! why did he did this? His name is ... (Gym leader 10) But I'm sorry, I don't know where he lives. But I heard he went to city 3 a few days ago. Maybe you should start at that city..");
                         Console.WriteLine($"{username} : Thank you so much, see you.");
                         IsGym1notPass = false;
@@ -3195,8 +3294,8 @@ namespace ConsoleApplication1
                         Console.WriteLine("Gym leader 3 :  Not bad, what do you want to know?");
                         Console.WriteLine($"{username} : Have you ever seen (Gym leader 10) ? I heard that he was here.");
                         Console.WriteLine("Gym leader 3 : Why would I tell you that? You got any problem with him?");
-                        Console.WriteLine($"{username} : He stole my monster and I have to bring him back. If you know anything about him, please tell me.");
-                        Console.WriteLine("Gym leader 3 : I actually don't wanna tell where someone is or doing. But this I can't let it happen. He is at city 10, But. before you get to that city, You will have to get through these cities I marked in this map. and you have to train your monster, because in most of people are people of Gym leader 10 in those cities. If can't use words then use violence. I can't tell you anything more than this. Good luck");
+                        Console.WriteLine($"{username} : He kidnapped my monster and I have to bring him back. If you know anything about him, please tell me.");
+                        Console.WriteLine("Gym leader 3 : I actually don't wanna tell where someone is or doing. But this I can't let it happen. He is at city 10, But. before you get to that city, You will have to get through these cities I marked in this map. and you have to train your monster, because most of people are people of Gym leader 10 in those cities. If can't use words then use violence. I can't tell you anything more than this. Good luck");
                         Console.WriteLine($"{username} : Thanks a lot, See you.");
                         Console.WriteLine($"Game clear");
                         Console.ReadKey(true);
@@ -3223,7 +3322,7 @@ namespace ConsoleApplication1
                         "Catch those monsters!!\n",
                         "Travel and become strong together\n",
                         "Hmmmm..... ",
-                        "Come and say you name  "
+                        "Come and say your name  "
                     };
                     
 
@@ -3242,12 +3341,15 @@ namespace ConsoleApplication1
                     while (true)
                     {
                         Logo();
-                        Console.WriteLine("How can i call your name");
+                        Console.WriteLine("How can I call your name?");
+                        Console.Write(">>> ");
                         userName = Console.ReadLine();
                         if (string.IsNullOrWhiteSpace(userName) )
                         {
-                            
-                            ShowText("please enter you're name");
+                            Console.ForegroundColor = ConsoleColor.Red;
+                            ShowText("Please enter your name.");
+                            Console.ResetColor();
+                            Console.ReadKey(true);
                             Console.Clear();
                             continue;
                         }
@@ -3259,7 +3361,7 @@ namespace ConsoleApplication1
                     {
                         $"Ohhh {userName} ??",
                         "\nI\'ll remember that ",
-                        "We've no have time Have a good luck  "
+                        "We have no time, good luck."
                     };
                     
                     Logo();
@@ -3278,15 +3380,21 @@ namespace ConsoleApplication1
                     while (true)
                     {
                         Console.Clear();
+                        Console.ForegroundColor = ConsoleColor.Blue;
                         ImgMonster1();
+                        Console.ForegroundColor = ConsoleColor.Green;
                         ImgMonster2();
+                        Console.ForegroundColor = ConsoleColor.DarkMagenta;
                         ImgMonster3();
+                        Console.ResetColor();
                         Console.WriteLine();
-                        Console.WriteLine("Chose your first monster");
+                        Console.ForegroundColor = ConsoleColor.DarkGreen;
+                        Console.WriteLine("Choose your starter monster.");
+                        Console.ResetColor();
                         Console.WriteLine("===========================");
                         Console.WriteLine("1.Teloth\n" +
                                           "2.Dorran\n" +
-                                          "3.Delphifire\n");
+                                          "3.Delphifire");
                         Console.WriteLine("===========================");
 
                         bool isTypeCorract = int.TryParse(Console.ReadLine(), out int chosenmonster);
@@ -3330,7 +3438,9 @@ namespace ConsoleApplication1
 
                         if (!isTypeCorract || chosenmonster > 3 || chosenmonster < 1 )
                         {
-                            Console.WriteLine("Please Enter number 1 2 or 3");
+                            Console.ForegroundColor = ConsoleColor.Red;
+                            Console.WriteLine("Please Enter number 1 2 or 3.");
+                            Console.ResetColor();
                             Console.ReadKey(true);
                         }
 
@@ -3343,7 +3453,7 @@ namespace ConsoleApplication1
                     {
                     "\n\n\nYou own a Legendary tier Monster .....\n",
                     "This made many people want your monster and dare you to fight with their monster and hope to take it.....\n",
-                    $"One day {userName}'s monster has been stolen..... \n",
+                    $"One day {userName}'s monster has been kidnapped..... \n",
                     "You need to find your monster back!.....\n\n\n",
 
 
@@ -3359,11 +3469,11 @@ namespace ConsoleApplication1
 
                     Console.WriteLine("||-------------------------------------------------||");
                     ShowText(
-                    "On that day I was searchhing for monstes in the forest. Sunddenly a man appeared and talked to my monster." +
-                    "\nSomethingthing hard as rock hit my head, Before I passed out I saw his badge.\n" +
-                    "it's a red colored sun badge it'd a Gym leader badge! When I woke up my monster was gone\n" +
+                    "On that day I was searching for monsters in the forest. Sunddenly a man appeared and talked to my monster." +
+                    "\nSomething hard as rock hit my head, Before I passed out I saw his badge.\n" +
+                    "it's a red colored sun badge it's a Gym Leader badge! When I woke up my monster was gone\n" +
                     "I'll find that gym leader and bring my monster back!!\n");
-                    Console.WriteLine("\n||-------------------------------------------------||");
+                    Console.WriteLine("||-------------------------------------------------||");
                     Console.ReadKey(true);
                     Logo();
                     Console.Clear();
@@ -3371,13 +3481,8 @@ namespace ConsoleApplication1
                     Town(1,userName);
                     
 
-
-
-
-
                 }
-            
-        
+
     }
 }
     
